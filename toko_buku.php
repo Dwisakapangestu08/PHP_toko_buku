@@ -31,7 +31,7 @@ include('koneksi.php');
                 <?php
                 $no = 1;
                 $query = "SELECT * FROM buku";
-                $result = mysqli_query($connetion, $query);
+                $result = mysqli_query($connection, $query);
                 while ($data = mysqli_fetch_array($result)) {
                 ?>
                     <tr>
