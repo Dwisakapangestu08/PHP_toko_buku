@@ -15,7 +15,7 @@ include('koneksi.php');
 <body>
     <div class="container">
         <h4 class="my-3">List Buku</h4>
-        <button class="btn btn-primary mb-3"><a href="tambah_buku.php" class="text-white text-decoration-none">Tambah Buku</a></button>
+        <button class="btn btn-primary mb-3"><a href="menambahkan_buku.php" class="text-white text-decoration-none">Tambah Buku</a></button>
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -40,8 +40,7 @@ include('koneksi.php');
                         <td><?= $data['pengarang'] ?></td>
                         <td><?= $data['penerbit'] ?></td>
                         <td>
-                            <a href="updateTokoBuku.php?id=<?= $data['id'] ?>" class="btn btn-warning">Edit</a>
-                            <a href="delete_buku.php?id=<?= $data['id'] ?>" class="btn btn-danger">Delete</a>
+
                         </td>
                     </tr>
                 <?php
