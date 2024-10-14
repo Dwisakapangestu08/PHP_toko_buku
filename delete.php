@@ -5,8 +5,8 @@ if (isset($_GET['id'])) {
     
     $id = $_GET['id'];
 
-    $sql = "DELET FROM koneksi WHERE id=$id";
-    $query = mysqli_query($db, $sql);
+    $sql = "DELETE FROM buku WHERE id=$id";
+    $query = mysqli_query($connection, $sql);
 
     if ( $query ) {
         header('Location: toko_buku.php');
