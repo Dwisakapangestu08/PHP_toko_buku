@@ -40,8 +40,8 @@ include('koneksi.php');
                         <td><?= $data['pengarang'] ?></td>
                         <td><?= $data['penerbit'] ?></td>
                         <td>
-                            <a href="updateTokoBuku.php?id=<?php $data['id']; ?>">Edit</a>
-                            <a href="delete.php?id=<?php $data['id']; ?>">Hapus</a>
+                            <a href="updateTokoBuku.php?id=<?= $data['id']; ?>" class="btn btn-warning">Edit</a>
+                            <a href="delete.php?id=<?= $data['id']; ?>" class="btn btn-danger">Hapus</a>
                         </td>
                     </tr>
                 <?php
